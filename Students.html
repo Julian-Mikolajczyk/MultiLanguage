@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<link rel="stylesheet" href="./css/style.css" />
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szkoła językowa MultiLanguage</title>
+
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="Szkoła językowa MultiLanguage Logo" class="center">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Students.html" class="active">Students</a></li>
+            <li><a href="./Teachers.html">Teachers</a></li>
+            <li><a href="./Schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <table class="table">
+                <thead class="table-nav">
+                    <tr>
+                        <th class="table-nav-cell">Name</th>
+                        <th class="table-nav-cell">Surname</th>
+                        <th class="table-nav-cell">E-mail</th>
+                        <th class="table-nav-cell">PESEL</th>
+                        <th class="table-nav-cell">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-body">
+                        <td>Jan</td>
+                        <td>Kowalski</td>
+                        <td>jan.kowalski@acme.com</td>
+                        <td>1111111111</td>
+                        <td class="dropdown">
+                            <button class="dropbtn">Details</button>
+                            <div class="dropdown-content">
+                                <a href="./Student-Details.html" class="list-actions-button-details">Profile
+                                    Informations</a>
+                                <a href="./Edit-Student-Table.html" class="list-actions-button-edit">Edit</a>
+                                <a href="" class="list-actions-button-delete">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-body">
+                        <td>Julian</td>
+                        <td>Mikołajczyk</td>
+                        <td>mikolajczykjulian@gmail.com</td>
+                        <td>2222222222</td>
+                        <!-- <td>
+                            <ul>
+                                <li>
+                                    <a href="./Student-Details.html" class="list-actions-button-details">Details</a>
+                                </li>
+                                <li>
+                                    <a href="" class="list-actions-button-edit">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="" class="list-actions-button-delete">Delete</a>
+                                </li>
+                            </ul>
+                        </td> -->
+                        <td class="dropdown">
+                            <button class="dropbtn">Details</button>
+                            <div class="dropdown-content">
+                                <a href="./Student-Details.html" class="list-actions-button-details">Profile
+                                    Informations</a>
+                                <a href="./Edit-Student-Table.html" class="list-actions-button-edit">Edit</a>
+                                <a href="" class="list-actions-button-delete">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-body">
+                        <td>Michał</td>
+                        <td>Melaniuk</td>
+                        <td>michalmelaniuk@gmail.com</td>
+                        <td>3333333333</td>
+                        <td class="dropdown">
+                            <button class="dropbtn">Details</button>
+                            <div class="dropdown-content">
+                                <a href="./Student-Details.html" class="list-actions-button-details">Profile
+                                    Informations</a>
+                                <a href="./Edit-Student-Table.html" class="list-actions-button-edit">Edit</a>
+                                <a href="" class="list-actions-button-delete">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a href="./Student-Add-Form.html" class="button-add">Add New Student</a>
+        </div>
+
+
+    </main>
+    <footer>
+        Julian, Mikołajczyk, s18734
+    </footer>
+
+</body>
+
+</html>

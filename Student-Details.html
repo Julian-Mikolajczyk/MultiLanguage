@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<link rel="stylesheet" href="./css/style.css" />
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szkoła językowa MultiLanguage</title>
+
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="Szkoła językowa MultiLanguage Logo" class="center">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Students.html" class="active">Students</a></li>
+            <li><a href="./Teachers.html">Teachers</a></li>
+            <li><a href="./Schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Student Details</h2>
+        <form class="form">
+            <label for="firstName">Name:</label>
+            <input type="text" name="firstName" value="Julian" id="firstName" disabled />
+            <label for="lastName">Surname:</label>
+            <input type="text" name="lastName" value="Mikołajczyk" id="lastName" disabled />
+            <label for="PESEL">PESEL:</label>
+            <input type="text" name="PESEL" value="00111112121" id="PESEL" disabled />
+            <label for="Email">E-mail:</label>
+            <input type="text" name="Email" value="mikolajczykjulian@gmail.com" id="Email" disabled />
+        </form>
+
+        <h2>Student Time Table</h2>
+
+        <table style="margin-left: auto;margin-right: auto;" class="table-list">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <th>8:30-10:00</th>
+                <td></td>
+                <td>
+                    <p>
+                        Classroom 170
+                    </p>
+                    <p>
+                        Topic:"Adjectives"
+                    </p>
+                    <p>
+                        Nauczyciel: Michał Melaniuk
+                    </p>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>10:15-11:45</th>
+                <td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <p>
+                        Classroom 107
+                    </p>
+                    <p>
+                        Topic:"USA Elections"
+                    </p>
+                    <p>
+                        Nauczyciel: Julian Mikołajczyk
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>12:15-13:45</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>14:00-15:30</th>
+                <td></td>
+                <td></td>
+                <td>
+                    <p>
+                        Classroom 107
+                    </p>
+                    <p>
+                        Topic:"Riot in NYC"
+                    </p>
+                    <p>
+                        Nauczyciel: Julian Mikołajczyk
+                    </p>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>15:45-17:15</th>
+                <td>
+                    <p>
+                        Classroom 2B
+                    </p>
+                    <p>
+                        Topic:"Phrasal verbs"
+                    </p>
+                    <p>
+                        Nauczyciel: Michał Melaniuk
+                    </p>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h2>Absences</h2>
+
+        <table class="table-list-absences">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>Class ID</th>
+                <th>Date</th>
+                <th>Reason</th>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>03-11-2020</td>
+                <td>Sick</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>10-09-2020</td>
+                <td>Sick</td>
+            </tr>
+
+        </table>
+
+
+        <!-- dodac nieobecnosci studenta -->
+
+    </main>
+    <footer>
+        Julian, Mikołajczyk, s18734
+    </footer>
+
+</body>
+
+</html>

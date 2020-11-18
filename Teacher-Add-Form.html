@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<link rel="stylesheet" href="./css/style.css" />
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACME HR Department</title>
+
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="Szkoła językowa MultiLanguage Logo" class="center">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Students.html">Students</a></li>
+            <li><a href="./Teachers.html" class="active">Teachers</a></li>
+            <li><a href="./Schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Add New Teacher</h2>
+        <form class="form">
+            <label for="firstName">Imię:<sup>*</sup></label>
+            <input type="text" name="firstName" id="firstName" />
+            <label for="lastName">Nazwisko:<sup>*</sup></label>
+            <input type="text" name="lastName" id="lastName" />
+            <label for="Salary">Salary:<sup>*</sup></label>
+            <input type="text" name="Salary" id="Salary" />
+            <label for="HireDate">HireDate:<sup>*</sup></label>
+            <input type="text" name="HireDate" id="HireDate" />
+
+            <div class="form-buttons">
+                <input type="submit" class="form-button-submit" value="Dodaj" />
+                <a href="./index.html" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+
+</body>
+
+</html>
