@@ -9,7 +9,6 @@ html {
 }
 body {
     min-width: 360px;
-    
   }
 header, 
 main, 
@@ -93,6 +92,7 @@ main{
 .table-nav {
     background: #5d3774d5;
     color: white;
+    text-align: left;
 }
 .table-nav-cell {
     font-size: 15px;
@@ -161,7 +161,7 @@ main{
 }
 .table-list td:not(:empty) {
     min-height: 150px;
-    background-color: #5d3774d5;
+    background-color: #a073bdd5;
     color: black;
     font-size: large;
     font-weight: 100;
@@ -206,10 +206,10 @@ main{
     margin-right: 1rem;
 }
 .list-actions-button-details {
-    background-color: #2980b9;    
+    background-color: #35a5f0;    
 }
 .list-actions-button-details:hover {
-    background-color: #3498db;
+    background-color: #5bbdff;
 }
 .list-actions-button-edit {
     background-color: #f39c12;
@@ -334,8 +334,26 @@ abbr[title='required'] {
     grid-template: 50% 50%/ 25% 25% 25% 25%;
     row-gap: 10px;
     column-gap: 10px;
-
-    
+}
+.container2{
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr;
+    max-width: 500px;
+}
+.presences-table{
+    border-collapse: collapse;
+}
+.presences-table-cell{
+    font-size: 15px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+.presences-table-cell-editing{
+    font-size: 15px;
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: white;
+    color: grey;
 }
 
 .lesson-table{
@@ -369,8 +387,48 @@ abbr[title='required'] {
     color: white; 
     border: 2px solid #56cf5a;
     border-radius: 30px;
+    min-width: 50px;
 }
 .lesson-table-add:hover {
+    background-color: white;
+    color: black;
+  }
+.lesson-table-delete{
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:  #e94735; 
+    color: white; 
+    border: 2px solid #ff5643;
+    border-radius: 30px;
+    min-width: 50px;
+}
+.lesson-table-delete:hover {
+    background-color: white;
+    color: black;
+  }
+
+.lesson-table-edit{
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:  #f39c12; 
+    color: white; 
+    border: 2px solid #f1c40f;
+    border-radius: 30px;
+    min-width: 50px;
+}
+.lesson-table-edit:hover {
     background-color: white;
     color: black;
   }
