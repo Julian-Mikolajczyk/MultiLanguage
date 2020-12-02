@@ -331,7 +331,7 @@ abbr[title='required'] {
 
 .container{
     display: grid;
-    grid-template: 50% 50%/ 25% 25% 25% 25%;
+    grid-template: auto auto auto auto/auto auto auto auto;
     row-gap: 10px;
     column-gap: 10px;
 }
