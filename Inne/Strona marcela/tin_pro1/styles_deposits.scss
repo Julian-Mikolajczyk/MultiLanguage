@@ -1,0 +1,82 @@
+@import "styles.scss";
+.notimportant{
+  @media all and (max-width: 970px){
+    display:none;
+  }
+}
+table{
+  margin-top: 2rem;
+  width:100%;
+  border: 3px solid $navclr;
+  border-radius: 10px;
+  tr:nth-child(even){
+    background-color: $backgroundclr;
+  }
+  th{
+    text-align: left;
+  }
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    float: left;
+    &.right{
+      float: right;
+    }
+
+    a {
+      &.delete{
+        background-color: $badclr;
+      }
+      &.edit{
+        background-color: $goodclr;
+      }
+      color: $textclr;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem;
+      &:hover{
+        background-color: $navclr;
+      }
+      &.active{
+        background-color: $backgroundclr;
+      }
+    }
+    a:nth-child(1){
+      margin-right: 0.5rem;
+    }
+    a:nth-last-child(1){
+      margin-left: 0.5rem;
+    }
+  }
+
+}
+form{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  @media all and (max-width: 1500px){
+    flex-flow: column wrap;
+  }
+  width: 100%;
+  label{
+    display: block;
+    padding: 0.5rem;
+  }
+  input{
+    &.submit{
+      margin-left: 0.5rem;
+      @media all and (max-width: 1500px){
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+}

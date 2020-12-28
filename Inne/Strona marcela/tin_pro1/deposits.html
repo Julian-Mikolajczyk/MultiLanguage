@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="styles_deposits.css">
+</head>
+<body>
+<nav>
+    <div class="nav_content">
+        <div class="logo_box">
+            <img src="logo.png" alt="logo_placeholder">
+            <a href="index.html"><h1>Saverr</h1></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a class="active" href="deposits.html">Wpłaty</a></li>
+            <li><a href="goals.html">Cele</a></li>
+            <li><a href="login.html">Zaloguj się</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="main-content">
+    <table>
+        <tr>
+            <th class="notimportant">Komentarz</th>
+            <th>Kwota</th>
+            <th>Cel</th>
+            <th>Data</th>
+            <th>Użytkownik</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td  class="notimportant">Z wrześniowej pensji</td>
+            <td>15000 zł</td>
+            <td>Samochód</td>
+            <td>04.09.2020</td>
+            <td>user1</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#edit" class="edit">Edytuj</a>
+                    </li>
+                    <li>
+                        <a href="#delete" class="delete">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td  class="notimportant">Ze zwrotu podatku</td>
+            <td>5000 zł</td>
+            <td>Samochód</td>
+            <td>04.08.2020</td>
+            <td>user1</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#edit" class="edit">Edytuj</a>
+                    </li>
+                    <li>
+                        <a href="#delete" class="delete">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td  class="notimportant">Znalezione na ziemi</td>
+            <td>2000 zł</td>
+            <td>Samochód</td>
+            <td>04.07.2020</td>
+            <td>user1</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#edit" class="edit">Edytuj</a>
+                    </li>
+                    <li>
+                        <a href="#delete" class="delete">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td  class="notimportant"></td>
+            <td>2000 zł</td>
+            <td>Komputer dla Janka</td>
+            <td>04.07.2020</td>
+            <td>user2</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#edit" class="edit">Edytuj</a>
+                    </li>
+                    <li>
+                        <a href="#delete" class="delete">Usuń</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <label for="user">Użytkownik</label>
+        <input type="text" id="user" name="user">
+        <label for="comment">Komentarz</label>
+        <input type="text" id="comment" name="comment">
+        <label for="amount">Kwota</label>
+        <input type="number" id="amount" name="amount">
+        <label for="goal">Cel</label>
+        <select id="goal" name="cars">
+            <option value="goal_1">Samochód</option>
+            <option value="goal_2">Komputer dla Janka</option>
+        </select>
+        <input type="submit" class="submit" value="Wyślij">
+    </form>
+</section>
+<footer>
+    <p>copyright marcel polak s19133</p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ratings</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Pizza Ratings</h1>
+        <img class="header__image" src="images/logo.png" alt="Pizza Ratings Logo">
+    </header>
+    <nav class="navigation">
+        <a class="navigation__item" href="index.html">Main Page</a>
+        <a class="navigation__item" href="list_pizza.html">Browse Pizzas</a>
+        <a class="navigation__item" href="add_pizza_form.html">Add Pizza</a>
+        <a class="navigation__item" href="list_review.html">Browse Reviews</a>
+        <a class="navigation__item current" href="add_review_form.html">Add Review</a>
+    </nav>
+    <main class="main">
+        <form class="form form--review">
+            <div class="form__item">
+                <label class="form__label form__label--review" for="pizza">Pizza:<sup>*</sup></label>
+                <input class="form__input" list="pizzas" name="pizza" id="pizza">
+            </div>
+            <datalist id="pizzas">
+                <option>Kurczak</option>
+                <option>Cztery Sery</option>
+            </datalist>
+
+            <div class="form__item">
+                <label class="form__label form__label--review" for="rating">Rating:<sup>*</sup></label>
+                <input class="form__input" type="number" name="rating" id="rating" min="0" max="10">
+            </div>
+            <div class="form__item">
+                <label class="form__label form__label--review" for="description">Description:<sup>*</sup></label>
+                <textarea class="form__input form__input--textarea" name="description" id="description"></textarea>
+            </div>
+            <div class="form__item">
+                <label class="form__label form__label--review" for="author">Author:<sup>*</sup></label>
+                <input class="form__input" type="text" name="author_name" id="author_name" placeholder="First Name">
+                <input class="form__input" type="text" name="author_surname" id="author_surname"
+                    placeholder="Last Name">
+            </div>
+        </form>
+        <div class="form__item form__item--submit-and-cancel">
+            <input class="form__submit" type="submit" value="Add" />
+            <a class="cancel" href="javascript:history.back()">Cancel</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Fabian Schmidt s19991</p>
+    </footer>
+</body>
+
+</html>

@@ -28,25 +28,31 @@
     <main>
         <h2 style="text-align: left;">Lesson details</h2>
         <form class="form" style="justify-content: left;">
-            <label for="Topic">Topic</label>
-            <input type="text" name="Topic" id="Topic" />
-            <label for="StartTime">Start Time:</label>
-            <input type="text" name="StartTime" id="StartTime" />
-        </form>
-
-        <h2 style="text-align: left;">Add new Presence</h2>
-        <form class="form" style="justify-content: left;">
-            <label for="TeacherName">Teacher's Name:</label>
-            <input type="text" name="TeacherName" id="TeacherName" />
-            <label for="TeacherSurname">Teacher's Surname:</label>
-            <input type="text" name="TeacherSurname" id="TeacherSurname" />
+            <label for="Topic">Select Lesson</label>
+            <div style="width:300px;">
+                <select>
+                    <option value="0">Select Topic:</option>
+                    <option value="1">Usa Elections (10:15-11:45)</option>
+                    <option value="2">Adjectives (12:15-13:45)</option>
+                    <option value="3">Nouns (8:30-11:45)</option>
+                    <option value="4">Ford Company (15:45-17:15)</option>
+                    <option value="5">Will we surive the future? (8:30-10:15)</option>
+                </select>
+            </div>
         </form>
         <h2 style="text-align: left;">Presence Informations</h2>
         <form class="form" style="justify-content: left;">
-            <label for="StudentsName">Student's Name:</label>
-            <input type="text" name="StudentsName" id="StudentsName" />
-            <label for="Studentsurame">Students's Surname:</label>
-            <input type="text" name="Studentsurame" id="Studentsurame" />
+            <label for="StudentID">Select Student</label>
+            <div style="width:300px;">
+                <select>
+                    <option value="0">Select Student</option>
+                    <option value="1">Mikołaj Kowalski</option>
+                    <option value="2">Julian Mikołajczyk</option>
+                    <option value="3">Aneta Bidzińska</option>
+                    <option value="4">Michał Twardy</option>
+                    <option value="5">Karol Wiśniewski</option>
+                </select>
+            </div>
             <label for="Ispresent">Is Present?:</label>
             <input type="checkbox" name="Ispresent" id="Ispresent" />
             <label for="Reason">Reason:</label>
